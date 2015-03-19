@@ -15,17 +15,17 @@
                 <div class="row equal">
                     <div class="col-xs-6 col-md-6">
                         <p class="lead">
-                            <a class="black cursor" href="about.jsp">
-                                <span class="label label-success">About</span>
+                            <a class="none cursor" href="about.jsp">
+                                <span class="label label-default">About</span>
                             </a> 
                             <small style="color: black">RVIS (Residual Variation Intolerance Score) is 
                                 a gene-based score intended to help in the interpretation of human sequence data.</small>
                         </p>
                     </div>
                     <div class="col-xs-6 col-md-6">
-                        <p class="lead">
-                            <a class="black"><span class="label label-success">News</span></a>
-                            <small style="color: black">We now provide a revised RVIS (unpublished) based on the recently released ExAC 
+                        <p class="lead" style="color: black">
+                            <span class="label label-default">News</span>
+                            <small>We now provide a revised RVIS (unpublished) based on the recently released ExAC 
                                 sequencing data. The ExAC data can be found at 
                                 (<a href="http://exac.broadinstitute.org/about">http://exac.broadinstitute.org/about</a>).</small>
                         </p>

@@ -32,9 +32,9 @@ a.brand-link {
     text-align: center;
 }
 
-code {
-    background-color: rgb(224,255,255);
-    padding: 0 0.1em;
+.footer a {
+    color: #aaa; 
+    text-decoration: none;
 }
 
 .error-template {
@@ -50,8 +50,7 @@ code {
     opacity:.8;
 }
 
-a.black {
-    color: black;
+a.none {
     text-decoration: none;
 }
 
