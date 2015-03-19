@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
@@ -21,15 +22,19 @@ public class Input {
     public static Hashtable<String, String> geneNameTable = new Hashtable<String, String>();
     public static ArrayList<String> allGeneList = new ArrayList<String>();
     public static ArrayList<String> alternativeGeneNameList = new ArrayList<String>();
+    public static ArrayList<String> invalidGeneList = new ArrayList<String>();
     public static String titleSetCheckBox[];
     public static Boolean isAllGene;
     public static Boolean isSelectAll;
+
+    public static String geneName;
 
     public static void init(HttpServletRequest request) throws Exception {
         titleIndexList.clear();
         titleSet.clear();
         inputGeneList.clear();
         geneNameList.clear();
+        invalidGeneList.clear();
 
         initAlternativeGeneNameList();
 
@@ -71,7 +76,7 @@ public class Input {
 
     private static void initGeneList(HttpServletRequest request) throws Exception {
         isAllGene = request.getParameter("allGene") != null;
-        String geneName = request.getParameter("geneName");
+        geneName = request.getParameter("geneName");
 
         if (isAllGene) {
             if (allGeneList.isEmpty()) {
@@ -90,18 +95,19 @@ public class Input {
                 }
             }
         } else {
-            String[] geneNames = geneName.replaceAll("( )+", "").replaceAll("\r", "").split("\n");
+            String[] geneNames = geneName.replaceAll("( )+", "").replaceAll("\r", "").split(",");
 
             for (String name : geneNames) {
                 inputGeneList.add(name);
 
-                name = getGeneName(name);
+                String alternativeName = getGeneName(name);
 
-                if (name.isEmpty()) {
+                if (alternativeName.isEmpty()) {
+                    invalidGeneList.add(name);
                     continue;
                 }
 
-                String[] temp = name.split(Data.TAB);
+                String[] temp = alternativeName.split(Data.TAB);
 
                 geneNameList.add(temp[0]);
                 geneNameTable.put(temp[0], temp[1]);

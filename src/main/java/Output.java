@@ -18,7 +18,6 @@ public class Output {
 
     public static String title;
     public static ArrayList<String> valueList;
-    public static ArrayList<String> invalidGeneList;
     private static HashMap<String, String> valueMap;
     public static File resultFolder;
     public static File resultFile;
@@ -28,7 +27,6 @@ public class Output {
         title = "Gene Name";
         valueList = new ArrayList<String>();
         valueMap = new HashMap<String, String>();
-        invalidGeneList = new ArrayList<String>();
 
         for (int index : Input.titleIndexList) {
             title += Data.COMMA + Data.TITLE[index];
@@ -97,7 +95,7 @@ public class Output {
             if (value != null) {
                 Output.valueList.add(value);
             } else {
-                invalidGeneList.add(geneName);
+//                invalidGeneList.add(geneName);
             }
         }
     }
