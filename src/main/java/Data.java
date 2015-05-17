@@ -9,7 +9,7 @@ public class Data {
     public final static String TAB = "\t";
     public final static String COMMA = ",";
     public final static String NEWLINE = "\n";
-    public final static String INPUT_DATA = "SCORES_n9_4NR_v5Dec14.txt";
+    public final static String INPUT_DATA = "SCORES_n12_4NR_v16May15.txt";
     public final static String GenicIntoleranceAlternativeGeneName = "GenicIntoleranceAlternativeGeneName.txt";
     public final static String[] TITLE = {
         "ALL_0.01%",
