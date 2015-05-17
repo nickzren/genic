@@ -32,7 +32,7 @@
                     </div>
                 </div>
 
-                <div class="row equal">
+                <div class="row">
                     <div class="col-xs-6 col-md-6">
                         <form class="form-search" action="Controller">
                             <div class="input-group">
@@ -45,15 +45,6 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
-                    <div class="col-xs-6 col-md-6">
-                        <p>
-                            <span class="label label-info">Note</span> 
-                            <small>Searches are available for precalculated genic intolerance scores, 
-                                as adopted in the published manuscript that first introduced this gene-based 
-                                quantitative scoring system. Output format consists of RVIS 
-                                and the relative genome-wide intolerance percentile(%).</small>
-                        </p>
                     </div>
                 </div>
 
