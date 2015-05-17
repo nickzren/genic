@@ -55,7 +55,7 @@
 
                 <%@include file="result.jsp" %>
 
-                <div class="row equal">
+                <div class="row">
                     <div class="col-xs-6 col-md-4">
                         <div class="panel panel-default">
                             <div class="panel-heading"></div>
@@ -71,12 +71,12 @@
                         <div class="panel panel-default">
                             <div class="panel-heading"></div>
                             <div class="panel-body">
-                                <a href="data/RVIS_Unpublished_ExAC_Nov2014.txt">Click Here</a> to download novel unpublished 
-                                RVIS scores based on ExAC sequencing data release (accessed: October 20th 2014). 
-                                Note, in addition to using a larger population of sequenced samples, 
-                                this updated genic score differs from the original implementation in two major ways: 
-                                the 'common' MAF is assigned as 0.05% and it now utilizes the stratified ethnicity data 
-                                provided within ExAC.
+                                <a href="data/RVIS_Unpublished_ExAC_May2015.txt">Click Here</a> to download novel unpublished RVIS scores 
+                                based on ExAC sequencing data release (accessed: January 13th 2015 [updated scores for release0.3]). 
+                                Note, in addition to using a larger population of sequenced samples, this updated genic score 
+                                differs from the original implementation in two major ways: the 'common' MAF is assigned as 0.05% 
+                                and it now utilizes the stratified ethnicity data provided within ExAC.Genes on the X chromosome 
+                                are assessed independently of the autosomal genes.
                             </div>
                         </div>
                     </div>
