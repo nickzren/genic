@@ -19,13 +19,13 @@
             </h4>
         </div>
 
-        <!--        <div class="col-md-2" >
-                    <a style="float: right" href="<%=url%>" >
-                        <button type="button" class="btn btn-primary" data-toggle="tooltip" 
-                                title="Download variant information with additional fields">
-                            Download</button>
-                    </a>
-                </div>-->
+        <div class="col-md-2" >
+            <a style="float: right" href="<%=url%>" >
+                <button type="button" class="btn btn-primary" data-toggle="tooltip" 
+                        title="Download variant information with additional fields">
+                    Download</button>
+            </a>
+        </div>
     </div>
 
     <table class="table table-striped">

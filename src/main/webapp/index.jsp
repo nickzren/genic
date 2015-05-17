@@ -37,7 +37,7 @@
                         <form class="form-search" action="Controller">
                             <div class="input-group">
                                 <input name="geneName" class="form-control input-lg tt-input"
-                                       type="text" placeholder="Search for a gene or gene list" >
+                                       type="text" placeholder="Search for a gene" >
                                 <div class="input-group-btn">
                                     <button class="btn btn-default input-lg tt-input" 
                                             type="submit">
@@ -59,9 +59,7 @@
 
                 <p class="text-muted" style="margin-left: 10px">
                     Examples - 
-                    Gene: <a href="Controller?geneName=SCN1A">SCN1A</a>, 
-                    Gene list: <a href="Controller?geneName=SCN1A, ATP1A3, HLA-A, MTOR, MUC5B">
-                        SCN1A, ATP1A3, HLA-A, MTOR, MUC5B</a> (comma delimited)               
+                    Gene: <a href="Controller?geneName=SCN1A">SCN1A</a>             
                 </p>
 
                 <%@include file="result.jsp" %>
