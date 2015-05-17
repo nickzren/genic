@@ -13,14 +13,17 @@
 
                 <br/>
 
-                <h4>Terms of use</h4>
+                <h4><i class="fa fa-gavel"></i> Terms of use</h4>
                 <p>
-                    ...
+                    The contents of the Genic Intolerance is intended strictly for educational and 
+                    research purposes. The data derived from this website may not be used for any 
+                    commercial purpose. The data from this website may not be replicated on any other 
+                    website without written consent.
                 </p>
 
                 <br/>
 
-                <h4>Citation</h4>                
+                <h4><i class="fa fa-star"></i> Citation</h4>                
                 <p>
                     Petrovski S., Wang Q., Heinzen E.L., Allen A.S., Goldstein D.B. (2013). 
                     Genic Intolerance to Functional Variation and the Interpretation of 
