@@ -1,5 +1,3 @@
-<%@page import="java.util.HashSet"%>
-<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
@@ -34,10 +32,10 @@
 
                 <div class="row">
                     <div class="col-xs-8 col-md-8">
-                        <form class="form-search" action="Controller">
+                        <form class="form-search" action="Search">
                             <div class="input-group">
-                                <input name="geneName" class="form-control input-lg tt-input"
-                                       type="text" placeholder="Search for a gene" >
+                                <input name="query" class="form-control input-lg tt-input"
+                                       type="text" placeholder="Search for a gene or gene list" >
                                 <div class="input-group-btn">
                                     <button class="btn btn-default input-lg tt-input" 
                                             type="submit">
@@ -50,8 +48,8 @@
 
                 <p class="text-muted" style="margin-left: 10px">
                     Examples - 
-                    Gene: <a href="Controller?geneName=SCN1A">SCN1A</a>, 
-                    Gene list: <a href="Controller?geneName=SCN1A, ATP1A3, HLA-A, MTOR, MUC5B, TBK1">
+                    Gene: <a href="Search?query=SCN1A">SCN1A</a>, 
+                    Gene list: <a href="Search?query=SCN1A, ATP1A3, HLA-A, MTOR, MUC5B, TBK1">
                         SCN1A, ATP1A3, HLA-A, MTOR, MUC5B, TBK1</a> (comma delimited)               
                 </p>
 

@@ -1,22 +1,21 @@
+<%@page import="igm.genic.object.Gene"%>
 <%@page import="java.util.ArrayList"%>
+
 
 <div>
     <%
-        String title = (String) request.getAttribute("title");
-        String geneName = (String) request.getAttribute("geneName");
+        String query = (String) request.getAttribute("query");
         ArrayList<String> invalidGeneList = (ArrayList<String>) request.getAttribute("invalidGenes");
+        ArrayList<Gene> geneList = (ArrayList<Gene>) request.getAttribute("geneList");
 
-        if (title != null) {
-            ArrayList<String> values = (ArrayList<String>) request.getAttribute("values");
-
-            if (!values.isEmpty()) {
-                String url = (String) request.getAttribute("download");
+        if (geneList != null) {
+            String url = (String) request.getAttribute("url");
     %>
 
     <div class="row">
         <div class="col-md-10">
             <h4>
-                <mark><%="Search query: " + geneName%></mark>
+                <mark><%="Search query: " + query%></mark>
             </h4>
         </div>
 
@@ -30,37 +29,53 @@
     </div>
 
     <table class="table table-striped">
-        <tr>
+        <thead>
+            <tr>
+                <%
+                    for (String title : Gene.title.split(",")) {
+                %>
+                <th class="text-center" data-toggle="tooltip" title=".....">
+                    <%=title%>
+                </th>
+                <%
+                    }
+                %>
+            </tr> 
+        </thead>
+
+        <tbody>
             <%
-                for (String str : title.split(",")) {
+                for (Gene gene : geneList) {
             %>
-            <th class="text-center">
-                <%=str%> 
-            </th>
+            <tr class="text-center">    
+                <td>
+                    <%=gene.getGene()%>
+                </td>
+                <td>
+                    <%=gene.getALL_01()%>
+                </td>
+                <td>
+                    <%=gene.getPP2_ALL_01()%>
+                </td>
+                <td>
+                    <%=gene.getEA_01()%>
+                </td>
+                <td>
+                    <%=gene.getAA_01()%>
+                </td>
+                <td>
+                    <%=gene.getOEratio()%>
+                </td>
+                <td>
+                    <%=gene.getExAC_005_Popn()%>
+                </td>
+            </tr>
             <%
                 }
             %>
-        </tr>
-        <%
-            for (String line : values) {
-        %>
-        <tr>    
-            <%
-                for (String str : line.split(",")) {
-            %>
-            <td align='center'>
-                <%=str%>
-            </td>
-            <%
-                }
-            %>
-        </tr>
-        <%
-            }
-        %>
+        </tbody>
     </table>
     <%
-        }
     } else {
     %>
     <br/>
