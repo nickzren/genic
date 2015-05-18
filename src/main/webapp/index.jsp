@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-xs-6 col-md-6">
+                    <div class="col-xs-8 col-md-8">
                         <form class="form-search" action="Controller">
                             <div class="input-group">
                                 <input name="geneName" class="form-control input-lg tt-input"
@@ -50,7 +50,9 @@
 
                 <p class="text-muted" style="margin-left: 10px">
                     Examples - 
-                    Gene: <a href="Controller?geneName=SCN1A">SCN1A</a>             
+                    Gene: <a href="Controller?geneName=SCN1A">SCN1A</a>, 
+                    Gene list: <a href="Controller?geneName=SCN1A, ATP1A3, HLA-A, MTOR, MUC5B, TBK1">
+                        SCN1A, ATP1A3, HLA-A, MTOR, MUC5B, TBK1</a> (comma delimited)               
                 </p>
 
                 <%@include file="result.jsp" %>

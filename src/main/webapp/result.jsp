@@ -15,7 +15,8 @@
 
     <div class="row">
         <div class="col-md-10">
-            <h4><%="Search query: " + geneName%>
+            <h4>
+                <mark><%="Search query: " + geneName%></mark>
             </h4>
         </div>
 
