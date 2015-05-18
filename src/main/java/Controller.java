@@ -26,16 +26,12 @@ public class Controller extends HttpServlet {
             request.setAttribute("title", Output.title);
             request.setAttribute("values", Output.valueList);
             request.setAttribute("invalidGenes", Input.invalidGeneList);
-//            request.setAttribute("genes", Input.inputGeneList);
-//            request.setAttribute("isAllGene", Input.isAllGene);
-            request.setAttribute("titleSet", Input.titleSet);
-//            request.setAttribute("isSelectAll", Input.isSelectAll);
             request.setAttribute("geneName", Input.geneName);     
             request.setAttribute("download", Output.url);
 
             request.getRequestDispatcher("index.jsp").forward(request, response);
         } catch (Exception ex) {
-//            ErrorManager.send(ex);
+            ex.printStackTrace();
         }
     }
 

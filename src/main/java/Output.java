@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.DataInputStream;
@@ -44,10 +45,6 @@ public class Output {
 
         ArrayList<String> geneNameList = Input.geneNameList;
 
-        if (Input.isAllGene) {
-            geneNameList = Input.allGeneList;
-        }
-
         while ((line = br.readLine()) != null) {
             String[] temp = line.split(Data.TAB);
 
@@ -56,9 +53,7 @@ public class Output {
             String value = temp[0];
 
             if (geneNameList.contains(value)) {
-                if (!Input.isAllGene) {
-                    value = Input.geneNameTable.get(value);
-                }
+                value = Input.geneNameTable.get(value);
 
                 for (int index : Input.titleIndexList) {
                     if (Data.TITLE[index].equals("OEratio")) {
