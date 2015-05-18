@@ -31,15 +31,54 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <%
-                    for (String title : Gene.title.split(",")) {
-                %>
-                <th class="text-center" data-toggle="tooltip" title=".....">
-                    <%=title%>
+                <th class="text-center">
+                    <a class="black" data-toggle="tooltip" 
+                       title="......">
+                        GENE
+                    </a>
                 </th>
-                <%
-                    }
-                %>
+
+                <th class="text-center">
+                    <a class="black" data-toggle="tooltip" 
+                       title="......">
+                        ALL_0.1%
+                    </a>
+                </th>
+
+                <th class="text-center">
+                    <a class="black" data-toggle="tooltip" 
+                       title="......">
+                        PP2_ALL_0.1%
+                    </a>
+                </th>
+
+                <th class="text-center">
+                    <a class="black" data-toggle="tooltip" 
+                       title="......">
+                        EA_0.1%
+                    </a>
+                </th>
+
+                <th class="text-center">
+                    <a class="black" data-toggle="tooltip" 
+                       title="......">
+                        AA_0.1%
+                    </a>
+                </th>
+
+                <th class="text-center">
+                    <a class="black" data-toggle="tooltip" 
+                       title="......">
+                        %OEratio
+                    </a>
+                </th>
+
+                <th class="text-center">
+                    <a class="black" data-toggle="tooltip" 
+                       title="......">
+                        %ExAC_0.05%popn
+                    </a>
+                </th>
             </tr> 
         </thead>
 
@@ -75,6 +114,13 @@
             %>
         </tbody>
     </table>
+        
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>    
+
     <%
     } else {
     %>
