@@ -1,4 +1,7 @@
+package igm.genic.model;
 
+
+import igm.genic.global.Data;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
@@ -16,18 +19,16 @@ import javax.servlet.http.HttpServletRequest;
 public class Input {
 
     public static ArrayList<Integer> titleIndexList = new ArrayList<Integer>();
-    public static ArrayList<String> inputGeneList = new ArrayList<String>();
     public static ArrayList<String> geneNameList = new ArrayList<String>();
     public static Hashtable<String, String> geneNameTable = new Hashtable<String, String>();
     public static ArrayList<String> allGeneList = new ArrayList<String>();
     public static ArrayList<String> alternativeGeneNameList = new ArrayList<String>();
     public static ArrayList<String> invalidGeneList = new ArrayList<String>();
 
-    public static String geneName;
+    public static String query;
 
     public static void init(HttpServletRequest request) throws Exception {
         titleIndexList.clear();
-        inputGeneList.clear();
         geneNameList.clear();
         invalidGeneList.clear();
 
@@ -70,13 +71,11 @@ public class Input {
     }
 
     private static void initGeneList(HttpServletRequest request) throws Exception {
-        geneName = request.getParameter("geneName");
+        query = request.getParameter("query");
 
-        String[] geneNames = geneName.replaceAll("( )+", "").replaceAll("\r", "").split(",");
+        String[] geneNames = query.replaceAll("\\s+", "").split(",");
 
         for (String name : geneNames) {
-            inputGeneList.add(name);
-
             String alternativeName = getGeneName(name);
 
             if (alternativeName.isEmpty()) {
