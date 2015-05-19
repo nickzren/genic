@@ -19,9 +19,9 @@ public class Gene {
             + "AA_0.1%,"
             + "AA_1%,"
             + "%OEratio,"
-            + "%RVIS_ExAC_0.1%popn,"
+            + "%ExAC_0.1%popn,"
             + "%ExAC_0.05%popn,"
-            + "%RVIS_ExAC_0.01%";
+            + "%ExAC_0.01%";
 
     public String Gene;
     public String ALL_001_value;
