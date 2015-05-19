@@ -10,12 +10,18 @@ public class Gene {
 
     public static final String title
             = "GENE,"
+            + "ALL_0.01%,"
             + "ALL_0.1%,"
+            + "ALL_1%,"
             + "PP2_ALL_0.1%,"
             + "EA_0.1%,"
+            + "EA_1%,"
             + "AA_0.1%,"
+            + "AA_1%,"
             + "%OEratio,"
-            + "%ExAC_0.05%popn";
+            + "%RVIS_ExAC_0.1%popn,"
+            + "%ExAC_0.05%popn,"
+            + "%RVIS_ExAC_0.01%";
 
     public String Gene;
     public String ALL_001_value;
@@ -40,13 +46,6 @@ public class Gene {
     public String ExAC_005_Popn_Percent;
     public String ExAC_001_Percent;
 
-//    "GENE,"
-//            + "ALL_0.1%,"
-//            + "PP2_ALL_0.1%,"
-//            + "EA_0.1%,"
-//            + "AA_0.1%,"
-//            + "%OEratio,"
-//            + "%ExAC_0.05%popn";
     public String getGene() {
         return Gene;
     }
