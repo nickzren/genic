@@ -1,6 +1,5 @@
 package igm.genic.controller;
 
-
 import igm.genic.model.Output;
 import igm.genic.model.Input;
 import igm.genic.model.Download;
@@ -21,26 +20,36 @@ public class Search extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
-            Data.rootPath = getServletContext().getRealPath("/data/");
-            Download.rootPath = getServletContext().getRealPath("/download/");
+            if (Input.query == null
+                    || !Input.query.equalsIgnoreCase(request.getParameter("query"))) {
 
-            Input.init(request);
+                if (Download.rootPath == null) {
+                    Data.rootPath = getServletContext().getRealPath("/data/");
+                    Download.rootPath = getServletContext().getRealPath("/download/");
+                }
 
-            Output.init();
+                Input.init(request);
 
-            Download.init();
-            
-            Download.generateFile();
+                Output.init();
 
-            request.setAttribute("geneList", Output.geneList);
-            request.setAttribute("invalidGenes", Input.invalidGeneList);
-            request.setAttribute("query", Input.query);     
-            request.setAttribute("url", Download.url);
+                Download.init();
+
+                Download.generateFile();
+            }
+
+            setRequest(request);
 
             request.getRequestDispatcher("index.jsp").forward(request, response);
         } catch (Exception ex) {
-            ex.printStackTrace();
+            request.getRequestDispatcher("error.jsp").forward(request, response);
         }
+    }
+
+    private void setRequest(HttpServletRequest request) {
+        request.setAttribute("geneList", Output.geneList);
+        request.setAttribute("invalidGenes", Input.invalidGeneList);
+        request.setAttribute("query", Input.query);
+        request.setAttribute("url", Download.url);
     }
 
     @Override
