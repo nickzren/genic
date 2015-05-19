@@ -15,7 +15,9 @@
                     <strong>Slavé Petrovski (Author)</strong><br>
                     Email: 
                     <a href="mailto: sp3347@columbia.edu" target="_blank">
-                        sp3347@columbia.edu
+                        <i class="fa fa-envelope-o">
+                            sp3347@columbia.edu
+                        </i>
                     </a>
                 </address>
 
@@ -23,7 +25,9 @@
                     <strong>Web Development</strong><br>
                     Email: 
                     <a href="mailto: z.ren@columbia.edu" target="_blank">
-                        z.ren@columbia.edu
+                        <i class="fa fa-envelope-o">
+                            z.ren@columbia.edu
+                        </i>
                     </a>
                 </address>
 
