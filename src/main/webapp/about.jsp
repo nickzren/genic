@@ -9,9 +9,7 @@
             <%@include file="base/header.jsp" %>
 
             <div class="container-main">
-                <h3>About</h3>
-
-                <br/>
+                <h3 class="page-header">About</h3>
 
                 <p>
                     RVIS (Residual Variation Intolerance Score) is a gene-based score intended to help 

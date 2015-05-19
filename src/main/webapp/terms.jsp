@@ -9,9 +9,7 @@
             <%@include file="base/header.jsp" %>
 
             <div class="container-main">
-                <h3>Terms</h3>
-
-                <br/>
+                <h3 class="page-header">Terms</h3>
 
                 <h4><i class="fa fa-gavel"></i> Terms of use</h4>
                 <p>

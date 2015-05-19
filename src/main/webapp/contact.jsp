@@ -9,9 +9,7 @@
             <%@include file="base/header.jsp" %>
 
             <div class="container-main">
-                <h3>Contact</h3>
-
-                <br>
+                <h3 class="page-header">Contact</h3>
 
                 <address>
                     <strong>Slavé Petrovski (Author)</strong><br>
@@ -22,7 +20,7 @@
                 </address>
 
                 <address>
-                    <strong>Web Development</strong><br>
+                    <strong>Nick Ren (Web Development)</strong><br>
                     Email: 
                     <a href="mailto: z.ren@columbia.edu" target="_blank">
                         z.ren@columbia.edu
