@@ -32,7 +32,7 @@
 
                 <div class="row">
                     <div class="col-xs-8 col-md-8">
-                        <form class="form-search" action="Search_trunk">
+                        <form class="form-search" action="Search">
                             <div class="input-group">
                                 <input name="query" class="form-control input-lg tt-input"
                                        type="text" placeholder="Search for a gene or gene list" >
@@ -48,8 +48,8 @@
 
                 <p class="text-muted" style="margin-left: 10px">
                     Examples - 
-                    Gene: <a href="Search_trunk?query=SCN1A">SCN1A</a>, 
-                    Gene list: <a href="Search_trunk?query=SCN1A, ATP1A3, HLA-A, MTOR, MUC5B, TBK1">
+                    Gene: <a href="Search?query=SCN1A">SCN1A</a>, 
+                    Gene list: <a href="Search?query=SCN1A, ATP1A3, HLA-A, MTOR, MUC5B, TBK1">
                         SCN1A, ATP1A3, HLA-A, MTOR, MUC5B, TBK1</a> (comma delimited)               
                 </p>
 
