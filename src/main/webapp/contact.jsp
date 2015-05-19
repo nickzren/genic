@@ -20,7 +20,7 @@
                 </address>
 
                 <address>
-                    <strong>Nick Ren (Web Development)</strong><br>
+                    <strong>Web Development</strong><br>
                     Email: 
                     <a href="mailto: z.ren@columbia.edu" target="_blank">
                         z.ren@columbia.edu
@@ -28,7 +28,11 @@
                 </address>
 
                 <address>
-                    <strong>Institute for Genomic Medicine</strong><br>
+                    <strong>
+                        <a class="black" href="http://www.igenmed.org/" target="_blank">
+                            Institute for Genomic Medicine
+                        </a>
+                    </strong><br>
                     Columbia University Medical Center<br>
                     701 W 168th Street<br>
                     Hammer Building 1408<br>
