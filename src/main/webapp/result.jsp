@@ -14,9 +14,6 @@
 
     <div class="row">
         <div class="col-md-10">
-            <h4>
-                <mark><%="Search query: " + query%></mark>
-            </h4>
         </div>
 
         <div class="col-md-2" >
@@ -33,50 +30,43 @@
             <tr>
                 <th class="text-center">
                     <a class="black" data-toggle="tooltip" 
-                       title="......">
+                       title="HGNC Gene name">
                         GENE
                     </a>
                 </th>
 
                 <th class="text-center">
                     <a class="black" data-toggle="tooltip" 
-                       title="......">
-                        ALL_0.1%
+                       title="Residual Variation Intolerance Score">
+                        RVIS
                     </a>
                 </th>
 
                 <th class="text-center">
                     <a class="black" data-toggle="tooltip" 
-                       title="......">
-                        PP2_ALL_0.1%
+                       title="RVIS based on EVS European Americans">
+                        EA_RVIS
                     </a>
                 </th>
 
                 <th class="text-center">
                     <a class="black" data-toggle="tooltip" 
-                       title="......">
-                        EA_0.1%
+                       title="RVIS based on EVS African Americans">
+                        AA_RVIS
                     </a>
                 </th>
 
                 <th class="text-center">
                     <a class="black" data-toggle="tooltip" 
-                       title="......">
-                        AA_0.1%
-                    </a>
-                </th>
-
-                <th class="text-center">
-                    <a class="black" data-toggle="tooltip" 
-                       title="......">
+                       title="Edge-case genes - when displayed, can substitute RVIS. (See About)">
                         %OEratio
                     </a>
                 </th>
 
                 <th class="text-center">
                     <a class="black" data-toggle="tooltip" 
-                       title="......">
-                        %ExAC_0.05%popn
+                       title="RVIS v2, constructed on the ExAC data release">
+                        %ExAC_RVIS
                     </a>
                 </th>
             </tr> 
@@ -92,9 +82,6 @@
                 </td>
                 <td>
                     <%=gene.getALL_01()%>
-                </td>
-                <td>
-                    <%=gene.getPP2_ALL_01()%>
                 </td>
                 <td>
                     <%=gene.getEA_01()%>

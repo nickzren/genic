@@ -62,7 +62,7 @@
                             <div class="panel-body">
                                 <a href="data/SCORES_n12_4NR_v16May15.txt">Click Here</a> 
                                 to download the full list of CCDS Release 9 RVIS scores. 
-                                As published in <a href="http://www.plosgenetics.org/article/info:doi/10.1371/journal.pgen.1003709">
+                                Please cite <a href="http://www.plosgenetics.org/article/info:doi/10.1371/journal.pgen.1003709">
                                     doi: 10.1371/journal.pgen.1003709</a>
                             </div>
                         </div>
