@@ -1,7 +1,7 @@
 <footer>
     <nav class="navbar-fixed-bottom">        
         <div class="footer">     
-            Slave Petrovski, Nick Ren, Dr. David Goldstein
+            Slavé Petrovski, Nick Ren, Dr. David Goldstein
             
             <br>
             Copyright © 2015
