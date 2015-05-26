@@ -46,11 +46,12 @@
                     </div>
                 </div>
 
-                <p class="text-muted" style="margin-left: 10px">
+                <p class="text-muted" style="margin-left: 8px">
                     Examples - 
                     Gene: <a href="Search?query=SCN1A">SCN1A</a>, 
-                    Gene list: <a href="Search?query=SCN1A, ATP1A3, HLA-A, MTOR, MUC5B, TBK1">
-                        SCN1A, ATP1A3, HLA-A, MTOR, MUC5B, TBK1</a> (comma delimited)               
+                    Gene list: <a href="Search?query=SCN1A, ATP1A3, HLA-A, MTOR, MUC5B">
+                        SCN1A, ATP1A3, HLA-A, MTOR, MUC5B</a> (comma delimited),
+                    <a href="Search?query=All.Gene">All.Gene</a>
                 </p>
 
                 <%@include file="result.jsp" %>

@@ -1,6 +1,5 @@
 package igm.genic.model;
 
-
 import igm.genic.global.Data;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -9,7 +8,6 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Hashtable;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -18,25 +16,19 @@ import javax.servlet.http.HttpServletRequest;
  */
 public class Input {
 
-    public static ArrayList<Integer> titleIndexList = new ArrayList<Integer>();
     public static ArrayList<String> geneNameList = new ArrayList<String>();
-    public static Hashtable<String, String> geneNameTable = new Hashtable<String, String>();
-    public static ArrayList<String> allGeneList = new ArrayList<String>();
     public static ArrayList<String> alternativeGeneNameList = new ArrayList<String>();
     public static ArrayList<String> invalidGeneList = new ArrayList<String>();
 
     public static String query;
 
     public static void init(HttpServletRequest request) throws Exception {
-        titleIndexList.clear();
         geneNameList.clear();
         invalidGeneList.clear();
 
         initAlternativeGeneNameList();
 
         initGeneList(request);
-
-        initTitleIndexList(request);
     }
 
     public static void initAlternativeGeneNameList() throws Exception {
@@ -73,6 +65,14 @@ public class Input {
     private static void initGeneList(HttpServletRequest request) throws Exception {
         query = request.getParameter("query");
 
+        if (query.equalsIgnoreCase("all.gene")) {
+            initAllGeneList();
+        } else {
+            initGeneListFromQuery();
+        }
+    }
+
+    private static void initGeneListFromQuery() {
         String[] geneNames = query.replaceAll("\\s+", "").split(",");
 
         for (String name : geneNames) {
@@ -86,7 +86,30 @@ public class Input {
             String[] temp = alternativeName.split(Data.TAB);
 
             geneNameList.add(temp[0]);
-            geneNameTable.put(temp[0], temp[1]);
+        }
+    }
+
+    private static void initAllGeneList() {
+        try {
+            File file = new File(Data.rootPath + File.separator + Data.INPUT_DATA);
+            FileInputStream fstream = new FileInputStream(file);
+            DataInputStream in = new DataInputStream(fstream);
+            BufferedReader br = new BufferedReader(new InputStreamReader(in));
+            String line;
+            boolean isFirst = true;
+
+            while ((line = br.readLine()) != null) {
+                if (isFirst) {
+                    isFirst = false;
+                    continue;
+                }
+
+                String[] temp = line.split(Data.TAB);
+
+                geneNameList.add(temp[0]);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -103,11 +126,5 @@ public class Input {
         }
 
         return "";
-    }
-
-    private static void initTitleIndexList(HttpServletRequest request) {
-        for (int i = 0; i < Data.TITLE.length; i++) {
-            titleIndexList.add(i);
-        }
     }
 }

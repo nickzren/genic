@@ -1,6 +1,5 @@
 package igm.genic.model;
 
-
 import igm.genic.object.Gene;
 import igm.genic.global.Data;
 import java.io.BufferedReader;
@@ -74,7 +73,7 @@ public class Output {
             Gene gene = geneMap.get(geneName);
             if (gene != null) {
                 Output.geneList.add(gene);
-            } 
+            }
         }
     }
 }

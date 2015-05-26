@@ -26,4 +26,6 @@ public class Data {
         "ExAC_0.1%",
         "ExAC_0.05%"};
     public static String rootPath = "";
+    
+    public static boolean isAllGene = false; // this option is used to genereate all gene file
 }
