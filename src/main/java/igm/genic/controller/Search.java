@@ -25,7 +25,7 @@ public class Search extends HttpServlet {
 
                 if (Download.rootPath == null) {
                     Data.rootPath = getServletContext().getRealPath("/data/");
-                    Download.rootPath = getServletContext().getRealPath("/download/");
+                    Download.rootPath = getServletContext().getRealPath("/downloads/");
                 }
 
                 Input.init(request);

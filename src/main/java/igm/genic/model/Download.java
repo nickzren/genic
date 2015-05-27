@@ -53,7 +53,7 @@ public class Download {
                 bw.close();
             }
 
-            url = "./download/" + folder.getName() + "/" + fileName;
+            url = "./downloads/" + folder.getName() + "/" + fileName;
         }
     }
 }
