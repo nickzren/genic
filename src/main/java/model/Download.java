@@ -1,8 +1,8 @@
-package igm.genic.model;
+package model;
 
 
 
-import igm.genic.object.Gene;
+import object.Gene;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;

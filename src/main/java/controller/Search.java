@@ -1,9 +1,9 @@
-package igm.genic.controller;
+package controller;
 
-import igm.genic.model.Output;
-import igm.genic.model.Input;
-import igm.genic.model.Download;
-import igm.genic.global.Data;
+import model.Output;
+import model.Input;
+import model.Download;
+import global.Data;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

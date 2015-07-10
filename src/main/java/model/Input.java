@@ -1,6 +1,6 @@
-package igm.genic.model;
+package model;
 
-import igm.genic.global.Data;
+import global.Data;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
@@ -106,7 +106,7 @@ public class Input {
 
                 String[] temp = line.split(Data.TAB);
 
-                geneNameList.add(temp[0]);
+                geneNameList.add(temp[0].toUpperCase());
             }
         } catch (Exception e) {
             e.printStackTrace();

@@ -1,6 +1,6 @@
-package igm.genic.object;
+package object;
 
-import igm.genic.global.Data;
+import global.Data;
 
 /**
  *

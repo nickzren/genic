@@ -1,7 +1,7 @@
-package igm.genic.model;
+package model;
 
-import igm.genic.object.Gene;
-import igm.genic.global.Data;
+import object.Gene;
+import global.Data;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;

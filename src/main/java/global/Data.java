@@ -1,4 +1,4 @@
-package igm.genic.global;
+package global;
 
 
 /**
