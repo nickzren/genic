@@ -2,7 +2,7 @@
     <title>Genic Intolerance</title>
     <meta charset="UTF-8">
     <meta name="description" content="RVIS (Residual Variation Intolerance Score) 
-          is a gene score based to help in the interpretation of human sequence data.">
+          is a gene score based module to help in the interpretation of human sequence data.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
