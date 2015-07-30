@@ -44,20 +44,6 @@
 
                 <th class="text-center">
                     <a class="black" data-toggle="tooltip" 
-                       title="RVIS based on EVS European Americans">
-                        EA_RVIS
-                    </a>
-                </th>
-
-                <th class="text-center">
-                    <a class="black" data-toggle="tooltip" 
-                       title="RVIS based on EVS African Americans">
-                        AA_RVIS
-                    </a>
-                </th>
-
-                <th class="text-center">
-                    <a class="black" data-toggle="tooltip" 
                        title="Edge-case genes - when displayed, can substitute RVIS. (See About)">
                         %OEratio
                     </a>
@@ -82,12 +68,6 @@
                 </td>
                 <td>
                     <%=gene.getALL_01()%>
-                </td>
-                <td>
-                    <%=gene.getEA_01()%>
-                </td>
-                <td>
-                    <%=gene.getAA_01()%>
                 </td>
                 <td>
                     <%=gene.getOEratio()%>
