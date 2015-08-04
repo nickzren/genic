@@ -1,4 +1,4 @@
-<%@page import="igm.genic.object.Gene"%>
+<%@page import="object.Gene"%>
 <%@page import="java.util.ArrayList"%>
 
 
