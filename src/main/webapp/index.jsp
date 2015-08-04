@@ -17,15 +17,15 @@
                                 <span class="label label-default">About</span>
                             </a> 
                             <small style="color: black">RVIS (Residual Variation Intolerance Score) is 
-                                a gene-based score intended to help in the interpretation of human sequence data.</small>
+                                a gene score based module intended to help in the interpretation of human sequence data.</small>
                         </p>
                     </div>
                     <div class="col-xs-6 col-md-6">
                         <p class="lead" style="color: black">
                             <span class="label label-default">News</span>
-                            <small>We now provide a revised RVIS (unpublished) based on the recently released ExAC 
+                            <small>We now provide a revised RVIS gene score (unpublished) based on the recently released ExAC 
                                 sequencing data. The ExAC data can be found at 
-                                (<a href="http://exac.broadinstitute.org/about">http://exac.broadinstitute.org/about</a>).</small>
+                                (<a href="http://exac.broadinstitute.org/about">exac.broadinstitute.org</a>).</small>
                         </p>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                             <div class="panel-heading"></div>
                             <div class="panel-body">
                                 <a href="data/SCORES_n12_4NR_v16May15.txt">Click Here</a> 
-                                to download the full list of CCDS Release 9 RVIS scores. 
+                                to download the full list of CCDS Release 9 RVIS gene score. 
                                 Please cite <a href="http://www.plosgenetics.org/article/info:doi/10.1371/journal.pgen.1003709">
                                     doi: 10.1371/journal.pgen.1003709</a>
                             </div>
@@ -72,7 +72,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading"></div>
                             <div class="panel-body">
-                                <a href="data/RVIS_Unpublished_ExAC_May2015.txt">Click Here</a> to download novel unpublished RVIS scores 
+                                <a href="data/RVIS_Unpublished_ExAC_May2015.txt">Click Here</a> to download novel unpublished RVIS gene score 
                                 based on ExAC sequencing data release (accessed: January 13th 2015 [updated scores for release0.3]). 
                                 Note, in addition to using a larger population of sequenced samples, this updated genic score 
                                 differs from the original implementation in two major ways: the 'common' MAF is assigned as 0.05% 
