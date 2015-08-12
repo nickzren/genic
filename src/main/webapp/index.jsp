@@ -56,28 +56,41 @@
 
                 <%@include file="result.jsp" %>
 
-                <div class="row">
-                    <div class="col-xs-6 col-md-4">
+                <div class="row equal">
+                    <div class="col-xs-6 col-md-8">
                         <div class="panel panel-default">
-                            <div class="panel-heading"></div>
+                            <div class="panel-heading">
+                                <i class="fa fa-download"></i> Download
+                            </div>
                             <div class="panel-body">
-                                <a href="data/SCORES_n12_4NR_v16May15.txt">Click Here</a> 
+                                <p>
+                                    <a href="data/SCORES_n12_4NR_v16May15.txt">Click Here</a> 
                                 to download the full list of CCDS Release 9 RVIS gene score. 
                                 Please cite <a href="http://www.plosgenetics.org/article/info:doi/10.1371/journal.pgen.1003709">
                                     doi: 10.1371/journal.pgen.1003709</a>
+                                </p>
+                                
+                                <p>
+                                    <a href="data/RVIS_Unpublished_ExAC_May2015.txt">Click Here</a> to download novel unpublished RVIS gene score 
+                                based on ExAC sequencing data release (accessed: January 13th 2015 [updated scores for release0.3]).
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-md-8">
+
+                    <div class="col-xs-6 col-md-4">
                         <div class="panel panel-default">
-                            <div class="panel-heading"></div>
+                            <div class="panel-heading">
+                                <i class="fa fa-link"></i> Pipelines known to incorporate RVIS
+                            </div>
                             <div class="panel-body">
-                                <a href="data/RVIS_Unpublished_ExAC_May2015.txt">Click Here</a> to download novel unpublished RVIS gene score 
-                                based on ExAC sequencing data release (accessed: January 13th 2015 [updated scores for release0.3]). 
-                                Note, in addition to using a larger population of sequenced samples, this updated genic score 
-                                differs from the original implementation in two major ways: the 'common' MAF is assigned as 0.05% 
-                                and it now utilizes the stratified ethnicity data provided within ExAC.Genes on the X chromosome 
-                                are assessed independently of the autosomal genes.
+                                <ul>
+                                    <li><a href="http://redmine.igm.cumc.columbia.edu/projects/atav" target="_blank">ATAV</a></li>
+                                    <li><a href="http://phenolyzer.usc.edu/" target="_blank">Phenolyzer</a></li>
+                                    <li><a href="https://sites.google.com/site/jpopgen/dbNSFP" target="_blank">dbNSFP</a></li>
+                                    <li><a href="https://gemini.readthedocs.org/en/latest/" target="_blank">GEMINI</a></li>
+                                    <li><a href="https://stage.scicrunch.org/browse/resources/SCR_013850" target="_blank">SciCrunch</a></li>
+                                </ul>    
                             </div>
                         </div>
                     </div>

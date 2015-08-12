@@ -46,21 +46,8 @@
                     ways as the original formation of RVIS. So that a gene with low Y value that 
                     scores as having a low ratio statistic is also judged "intolerant". We are currently 
                     working on a unified approach to capture those signals in a uniformed way across the genome.
-                </p>
-
-                <br>
-
-                <p><i class="fa fa-star"></i> Pipelines known to incorporate RVIS:</p>
-
-                <ul>
-                    <li><a href="http://redmine.igm.cumc.columbia.edu/projects/atav" target="_blank">ATAV</a></li>
-                    <li><a href="http://phenolyzer.usc.edu/" target="_blank">Phenolyzer</a></li>
-                    <li><a href="https://sites.google.com/site/jpopgen/dbNSFP" target="_blank">dbNSFP</a></li>
-                    <li><a href="https://gemini.readthedocs.org/en/latest/" target="_blank">GEMINI</a></li>
-                    <li><a href="https://stage.scicrunch.org/browse/resources/SCR_013850" target="_blank">SciCrunch</a></li>
-                </ul>
+                </p>                
             </div>
-
         </div>
 
         <%@include file="base/footer.jsp" %>    

@@ -11,6 +11,7 @@
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="about.jsp">About</a></li>
                 <li><a href="terms.jsp">Terms</a></li>
+                <li><a href="download.jsp">Download</a></li>
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
