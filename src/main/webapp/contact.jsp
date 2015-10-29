@@ -33,19 +33,14 @@
 
                 <address>
                     <strong>
-                        <a class="black" href="http://www.igenmed.org/" target="_blank">
+                        <a class="black" href="http://igm.columbia.edu" target="_blank">
                             Institute for Genomic Medicine
                         </a>
                     </strong><br>
                     Columbia University Medical Center<br>
                     701 W 168th Street<br>
                     Hammer Building 1408<br>
-                    New York, NY 10032<br>
-                    Contact us:
-                    <a href="http://www.igenmed.org/?loc=contact" target="_blank">
-                        <i class="fa fa-envelope"></i>
-                    </a>
-
+                    New York, NY 10032
                 </address>
             </div>
 

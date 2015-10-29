@@ -85,7 +85,7 @@
                             </div>
                             <div class="panel-body">
                                 <ul>
-                                    <li><a href="http://redmine.igm.cumc.columbia.edu/projects/atav" target="_blank">ATAV</a></li>
+                                    <li><a href="http://redmine.igm.cumc.columbia.edu/projects/atav/wiki" target="_blank">ATAV</a></li>
                                     <li><a href="http://phenolyzer.usc.edu/" target="_blank">Phenolyzer</a></li>
                                     <li><a href="https://sites.google.com/site/jpopgen/dbNSFP" target="_blank">dbNSFP</a></li>
                                     <li><a href="https://gemini.readthedocs.org/en/latest/" target="_blank">GEMINI</a></li>
