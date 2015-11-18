@@ -26,9 +26,9 @@
                     </a> 
                     (novel unpublished RVIS gene score 
                     based on ExAC sequencing data release (accessed: January 13th 2015 [updated scores for release0.3]). 
-                    Note, in addition to using a larger population of sequenced samples, this updated genic score 
-                    differs from the original implementation in two major ways: the 'common' MAF is assigned as 0.05% 
-                    and it now utilizes the stratified ethnicity data provided within ExAC.Genes on the X chromosome 
+                    Note, in addition to using a larger population of sequenced samples, this updated genic score differs 
+                    from the original implementation in three major ways: the 'common' MAF is assigned as 0.05% and the 
+                    scroe utilizes the stratified ethnicity data provided within ExAC. Moreover, X chromosome genes 
                     are assessed independently of the autosomal genes.)
                 </p>
             </div>
