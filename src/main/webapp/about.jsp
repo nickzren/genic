@@ -36,16 +36,20 @@
 
                 <p>
                     Note that for genes with very low (Y), there may not be enough polymorphism data 
-                    represented in EVS currently for an accurate assessment of genic intolerance, using 
-                    the original formulation of RVIS.  For this reason, genes where Y is below 3 and 
-                    X is relatively small (<30) have the additional option of a simple comparison reported 
-                    based on the observed and expected functional variants in the gene ("OEratio" checkbox).  
-                    In this formulation, allele frequency is ignored, and we simply compare all variants observed.   
-                    Reported will be the score for this comparison and the genes corresponding genome-wide 
-                    percentile for this comparison.  These percentiles are interpreted in the same 
-                    ways as the original formation of RVIS. So that a gene with low Y value that 
-                    scores as having a low ratio statistic is also judged "intolerant". We are currently 
-                    working on a unified approach to capture those signals in a uniformed way across the genome.
+                    represented in EVS currently for an accurate assessment of genic intolerance, 
+                    using the original formulation of RVIS. For this reason, genes where Y is below 3 
+                    and X is relatively small (<30) have the additional option of a simple comparison 
+                    reported based on the observed and expected functional variation in the gene ("OEratio" 
+                    checkbox). In this formulation, allele frequency is ignored, and we simply compare the 
+                    ‘rate of Observed non-synonymous variation’ over the ‘rate of Expected non-synonymous 
+                    variation.’ The “Expected ratio” is determined by simulating all possible single 
+                    nucleotide substitutions from the underlying protein-coding sequence context of the gene. 
+                    The reported OEratio score reflects how divergent the observed ratio is from the expected 
+                    ratio, and this is converted to a genome-wide percentile. These percentiles are 
+                    interpreted in the same ways as the original formation of RVIS. So that a gene with low 
+                    Y value that scores as having a low OEratio statistic is also judged "intolerant". 
+                    We are currently working on a unified approach to capture those signals in a uniformed 
+                    way across the genome.
                 </p>                
             </div>
         </div>
