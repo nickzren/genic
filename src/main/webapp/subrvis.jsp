@@ -28,14 +28,14 @@
 
             <%@include file="base/header.jsp" %>
 
-<!--            <div class="container-main">
+            <div class="container-main">
                 <div id='shinyapp'></div>
                 <script type='text/javascript' src='https://dq3p0g5ijakv8.cloudfront.net/assets/build-70/js/pym.js'></script>
                 <script type='text/javascript' src='https://dq3p0g5ijakv8.cloudfront.net/assets/build-70/js/iframe.js'></script>
-            </div>-->
+            </div>
         </div>
 
-<!--        <footer>
+        <footer>
             <nav class="navbar-fixed-bottom">        
                 <div class="footer">
                     Ayal Gussow, Nick Ren, Dr. David Goldstein | Copyright © 2015
@@ -43,6 +43,6 @@
                         Institute for Genomic Medicine</a>
                 </div>
             </nav>
-        </footer>-->
+        </footer>
     </body>
 </html>
