@@ -22,7 +22,7 @@
                 </address>
 
                 <address>
-                    <strong>Nick Ren (Site Administrator)</strong><br>
+                    <strong>Nick Ren (Web Administrator)</strong><br>
                     Email: 
                     <a href="mailto: z.ren@columbia.edu" target="_blank">
                         <i class="fa fa-envelope-o">
