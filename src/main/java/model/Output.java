@@ -63,6 +63,8 @@ public class Output {
                 gene.ExAC_01_Popn_Percent = temp[19];
                 gene.ExAC_005_Popn_Percent = temp[20];
                 gene.ExAC_001_Percent = temp[21];
+                gene.OEratio_Percentile_ExAC = temp[22];
+                gene.LoF_FDR_ExAC = temp[23];
 
                 geneMap.put(gene.Gene, gene);
             }

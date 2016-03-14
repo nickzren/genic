@@ -1,6 +1,5 @@
 package global;
 
-
 /**
  *
  * @author nick
@@ -11,21 +10,8 @@ public class Data {
     public final static String TAB = "\t";
     public final static String COMMA = ",";
     public final static String NEWLINE = "\n";
-    public final static String INPUT_DATA = "SCORES_n12_4NR_v16May15.txt";
-    public final static String GenicIntoleranceAlternativeGeneName = "GenicIntoleranceAlternativeGeneName.txt";
-    public final static String[] TITLE = {
-        "ALL_0.01%",
-        "ALL_0.1%",
-        "ALL_1%",
-        "PP2_ALL_0.1%",
-        "EA_0.1%",
-        "EA_1%",
-        "AA_0.1%",
-        "AA_1%",
-        "OEratio",
-        "ExAC_0.1%",
-        "ExAC_0.05%"};
+    public final static String INPUT_DATA = "GenicIntolerance_v3_12Mar16.txt";
+    public final static String GenicIntoleranceAlternativeGeneName = "GenicIntoleranceAlternativeGeneName_12Mar16.txt";
     public static String rootPath = "";
-    
     public static boolean isAllGene = false; // this option is used to genereate all gene file
 }

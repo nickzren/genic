@@ -21,7 +21,9 @@ public class Gene {
             + "%OEratio,"
             + "%ExAC_0.1%popn,"
             + "%ExAC_0.05%popn,"
-            + "%ExAC_0.01%";
+            + "%ExAC_0.01%,"
+            + "OEratio-percentile[ExAC],"
+            + "LoF-FDR[ExAC]";
 
     public String Gene;
     public String ALL_001_value;
@@ -45,6 +47,8 @@ public class Gene {
     public String ExAC_01_Popn_Percent;
     public String ExAC_005_Popn_Percent;
     public String ExAC_001_Percent;
+    public String OEratio_Percentile_ExAC;
+    public String LoF_FDR_ExAC;
 
     public String getGene() {
         return Gene;
@@ -101,6 +105,22 @@ public class Gene {
     public String getExAC_001() {
         return ExAC_001_Percent + "%";
     }
+    
+    public String getOEratio_Percentile_ExAC() {
+        if (OEratio_Percentile_ExAC.equals("N/A")) {
+            return Data.NA;
+        } else {
+            return OEratio_Percentile_ExAC + "%";
+        }
+    }
+    
+    public String getLoF_FDR_ExAC() {
+        if (LoF_FDR_ExAC.equals("N/A")) {
+            return Data.NA;
+        } else {
+            return LoF_FDR_ExAC;
+        }
+    }
 
     @Override
     public String toString() {
@@ -118,7 +138,9 @@ public class Gene {
         sb.append(getOEratio()).append(",");
         sb.append(getExAC_01_Popn()).append(",");
         sb.append(getExAC_005_Popn()).append(",");
-        sb.append(getExAC_001());
+        sb.append(getExAC_001()).append(",");
+        sb.append(getOEratio_Percentile_ExAC()).append(",");
+        sb.append(getLoF_FDR_ExAC());
 
         return sb.toString();
     }
