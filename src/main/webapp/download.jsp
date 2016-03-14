@@ -12,9 +12,9 @@
                 <h3 class="page-header">Download</h3>
 
                 <p>
-                    <a href="data/SCORES_n12_4NR_v16May15.txt">
+                    <a href="data/GenicIntolerance_v3_12Mar16.txt">
                         <i class="fa fa-file"></i>
-                        SCORES_n12_4NR_v16May15.txt
+                        GenicIntolerance_v3_12Mar16.txt
                     </a> 
                     (full list of CCDS Release 9 RVIS gene score)
                 </p>

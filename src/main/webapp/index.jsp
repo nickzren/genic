@@ -64,7 +64,7 @@
                             </div>
                             <div class="panel-body">
                                 <p>
-                                    <a href="data/SCORES_n12_4NR_v16May15.txt">Click Here</a> 
+                                    <a href="data/GenicIntolerance_v3_12Mar16.txt">Click Here</a> 
                                 to download the full list of CCDS Release 9 RVIS gene score. 
                                 Please cite <a href="http://www.plosgenetics.org/article/info:doi/10.1371/journal.pgen.1003709">
                                     doi: 10.1371/journal.pgen.1003709</a>

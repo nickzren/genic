@@ -55,6 +55,18 @@
                         %ExAC_RVIS
                     </a>
                 </th>
+                
+                <th class="text-center">
+                    <a class="black">
+                        %ExAC_OEratio
+                    </a>
+                </th>
+                
+                <th class="text-center">
+                    <a class="black">
+                        ExAC_LoF_FDR
+                    </a>
+                </th>
             </tr> 
         </thead>
 
@@ -74,6 +86,12 @@
                 </td>
                 <td>
                     <%=gene.getExAC_005_Popn()%>
+                </td>
+                <td>
+                    <%=gene.getOEratio_Percentile_ExAC()%>
+                </td>
+                <td>
+                    <%=gene.getLoF_FDR_ExAC()%>
                 </td>
             </tr>
             <%
