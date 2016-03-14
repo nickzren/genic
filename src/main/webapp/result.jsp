@@ -50,21 +50,21 @@
                 </th>
 
                 <th class="text-center">
-                    <a class="black" data-toggle="tooltip" 
-                       title="RVIS v2, constructed on the ExAC data release">
-                        %ExAC_RVIS
-                    </a>
-                </th>
-                
-                <th class="text-center">
                     <a class="black">
                         %ExAC_OEratio
                     </a>
                 </th>
-                
+
                 <th class="text-center">
                     <a class="black">
                         ExAC_LoF_FDR
+                    </a>
+                </th>
+
+                <th class="text-center">
+                    <a class="black" data-toggle="tooltip" 
+                       title="RVIS v2, constructed on the ExAC data release">
+                        %ExAC_RVIS
                     </a>
                 </th>
             </tr> 
@@ -85,13 +85,13 @@
                     <%=gene.getOEratio()%>
                 </td>
                 <td>
-                    <%=gene.getExAC_005_Popn()%>
-                </td>
-                <td>
                     <%=gene.getOEratio_Percentile_ExAC()%>
                 </td>
                 <td>
                     <%=gene.getLoF_FDR_ExAC()%>
+                </td>
+                <td>
+                    <%=gene.getExAC_005_Popn()%>
                 </td>
             </tr>
             <%
@@ -99,7 +99,7 @@
             %>
         </tbody>
     </table>
-        
+
     <script type="text/javascript">
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
