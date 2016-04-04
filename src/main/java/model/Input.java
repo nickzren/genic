@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 public class Input {
 
     public static ArrayList<String> geneNameList = new ArrayList<String>();
-    public static ArrayList<String> alternativeGeneNameList = new ArrayList<String>();
+    public static HashSet<String> alternativeGeneNameSet = new HashSet<String>();
     public static ArrayList<String> invalidGeneList = new ArrayList<String>();
 
     public static String query;
@@ -32,33 +32,35 @@ public class Input {
     }
 
     public static void initAlternativeGeneNameList() throws Exception {
-        File file = new File(Data.rootPath + File.separator + Data.GenicIntoleranceAlternativeGeneName);
-        FileInputStream fstream = new FileInputStream(file);
-        DataInputStream in = new DataInputStream(fstream);
-        BufferedReader br = new BufferedReader(new InputStreamReader(in));
-        String line;
+        if (alternativeGeneNameSet.isEmpty()) {
+            File file = new File(Data.rootPath + File.separator + Data.GenicIntoleranceAlternativeGeneName);
+            FileInputStream fstream = new FileInputStream(file);
+            DataInputStream in = new DataInputStream(fstream);
+            BufferedReader br = new BufferedReader(new InputStreamReader(in));
+            String line;
 
-        HashSet<String> tempSet = new HashSet<String>();
-        String value = "";
+            HashSet<String> tempSet = new HashSet<String>();
+            String value = "";
 
-        while ((line = br.readLine()) != null) {
-            line = line.toUpperCase();
+            while ((line = br.readLine()) != null) {
+                line = line.toUpperCase();
 
-            for (String str : line.split(Data.TAB)) {
-                if (tempSet.isEmpty()) {
-                    tempSet.add(str);
-                    value = str;
-                } else {
-                    if (!tempSet.contains(str)) {
-                        value += Data.TAB + str;
+                for (String str : line.split(Data.TAB)) {
+                    if (tempSet.isEmpty()) {
+                        tempSet.add(str);
+                        value = str;
+                    } else {
+                        if (!tempSet.contains(str)) {
+                            value += Data.TAB + str;
+                        }
+
+                        tempSet.add(str);
                     }
-
-                    tempSet.add(str);
                 }
-            }
 
-            alternativeGeneNameList.add(value);
-            tempSet.clear();
+                alternativeGeneNameSet.add(value);
+                tempSet.clear();
+            }
         }
     }
 
@@ -114,7 +116,7 @@ public class Input {
     }
 
     public static String getGeneName(String value) {
-        for (String alternativeGeneNames : alternativeGeneNameList) {
+        for (String alternativeGeneNames : alternativeGeneNameSet) {
             String[] names = alternativeGeneNames.split(Data.TAB);
 
             for (String name : names) {
