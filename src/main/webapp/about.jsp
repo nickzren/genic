@@ -57,7 +57,7 @@
                 <p>
                     ExAC_LoF_FDR: To generate the loss-of-function (LoF) deficiency measure “ExAC_LoF_FDR”, 
                     we apply our previously described methodology from 
-                    <em><a href="http://www.sciencemag.org/lookup/doi/10.1126/science.aaa3650" target="_blank">Petrovski et al. (2015)</a></em> 
+                    <em><a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1005492" target="_blank">Petrovski et al. (2015)</a></em> 
                     on the larger ExAC cohort.
                 </p>
                 
@@ -72,7 +72,7 @@
                     the protein-coding variation found in the gene within the ExAC reference cohort. Taking a gene’s expected rate of distinct 
                     LoF variation under neutrality as calculated by (Ps), a subset of 3,760 genes were identified as being significantly deficient 
                     of LoF variants using a one-sided binomial exact test with Benjamini & Hochberg false discovery rate multiple-testing correction 
-                    (FDR = 1%) (See <em><a href="http://www.sciencemag.org/lookup/doi/10.1126/science.aaa3650" target="_blank">Petrovski et al. (2015)</a></em> 
+                    (FDR = 1%) (See <em><a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1005492" target="_blank">Petrovski et al. (2015)</a></em> 
                     for more information based on the EVS implementation).
                 </p>
                 
