@@ -56,7 +56,8 @@
                 </th>
 
                 <th class="text-center">
-                    <a class="black">
+                    <a class="black" data-toggle="tooltip" 
+                       title="FDR adjusted p-value reflects the significance of the departure from the expected rate of LoF variants">
                         ExAC_LoF_FDR
                     </a>
                 </th>

@@ -50,7 +50,36 @@
                     Y value that scores as having a low OEratio statistic is also judged "intolerant". 
                     We are currently working on a unified approach to capture those signals in a uniformed 
                     way across the genome.
-                </p>                
+                </p>
+                
+                <hr>
+                
+                <p>
+                    ExAC_LoF_FDR: To generate the loss-of-function (LoF) deficiency measure “ExAC_LoF_FDR”, 
+                    we apply our previously described methodology from 
+                    <em><a href="http://www.sciencemag.org/lookup/doi/10.1126/science.aaa3650" target="_blank">Petrovski et al. (2015)</a></em> 
+                    on the larger ExAC cohort.
+                </p>
+                
+                <p>
+                    We took each gene's missense, synonymous and loss-of-function mutation rates (See: Exome Aggregation Consortium et al., 
+                    2016 (pre-print publication)) to calculate the gene’s expected frequency of protein-coding LoF variants (Ps). 
+                    This was achieved by dividing the mutation rate associated with the simulated LoF variants to the overall genic 
+                    mutation rate (sum of the three aforementioned mutation classes). The result is an estimate of the percentage 
+                    of observed variants in a gene that we expect to be annotated as a LoF effect. We then use the ExAC database 
+                    (release 0.3) to extract for each gene both the total number of observed unique variants (n) and specifically 
+                    the number of observed unique LoF variants reported in that gene (x). This is the observed rate of LoF variants given all 
+                    the protein-coding variation found in the gene within the ExAC reference cohort. Taking a gene’s expected rate of distinct 
+                    LoF variation under neutrality as calculated by (Ps), a subset of 3,760 genes were identified as being significantly deficient 
+                    of LoF variants using a one-sided binomial exact test with Benjamini & Hochberg false discovery rate multiple-testing correction 
+                    (FDR = 1%) (See Petrovski et al. 2015 for more information based on the EVS implementation).
+                </p>
+                
+                <p>
+                    While a fraction of the exome non-informative for LoF deficiency due to insufficient resolution (power) and will improve 
+                    with a larger reference cohort, the list of genes that are already significantly LoF deficient based on the ExAC data 
+                    release is already a valuable resource.
+                </p>
             </div>
         </div>
 
