@@ -31,6 +31,14 @@
                     scroe utilizes the stratified ethnicity data provided within ExAC. Moreover, X chromosome genes 
                     are assessed independently of the autosomal genes.)
                 </p>
+
+                <p>
+                    <a href="data/GenicIntoleranceKey.pdf">
+                        <i class="fa fa-file"></i>
+                        GenicIntoleranceKey.pdf
+                    </a>
+                    (data header description)
+                </p>
             </div>
 
         </div>
