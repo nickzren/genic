@@ -5,3 +5,9 @@ nb-configuration.xml
 src/.DS_Store
 
 .DS_Store
+
+.classpath
+
+.project
+
+*.prefs
