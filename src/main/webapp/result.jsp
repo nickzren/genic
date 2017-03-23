@@ -44,28 +44,29 @@
 
                 <th class="text-center">
                     <a class="black" data-toggle="tooltip" 
-                       title="Edge-case genes - when displayed, can substitute RVIS. (See About)">
-                        %OEratio
-                    </a>
-                </th>
-
-                <th class="text-center">
-                    <a class="black">
-                        %ExAC_OEratio
+                       title="RVIS v2, constructed on the ExAC data release">
+                        %ExAC RVIS
                     </a>
                 </th>
 
                 <th class="text-center">
                     <a class="black" data-toggle="tooltip" 
                        title="FDR adjusted p-value reflects the significance of the departure from the expected rate of LoF variants">
-                        ExAC_LoF_FDR
+                        ExAC LoF FDR
                     </a>
                 </th>
 
                 <th class="text-center">
                     <a class="black" data-toggle="tooltip" 
-                       title="RVIS v2, constructed on the ExAC data release">
-                        %ExAC_RVIS
+                       title="RVIS v3, constructed on the ExAC v2 data release">
+                        %ExAC v2 RVIS
+                    </a>
+                </th>
+
+                <th class="text-center">
+                    <a class="black" data-toggle="tooltip" 
+                       title="RVIS v3, constructed on the ExAC v2 data release">
+                        Edge Case (%OE-ratio)
                     </a>
                 </th>
             </tr> 
@@ -83,16 +84,16 @@
                     <%=gene.getALL_01()%>
                 </td>
                 <td>
-                    <%=gene.getOEratio()%>
-                </td>
-                <td>
-                    <%=gene.getOEratio_Percentile_ExAC()%>
+                    <%=gene.getExAC_005_Popn_Percent()%>
                 </td>
                 <td>
                     <%=gene.getLoF_FDR_ExAC()%>
                 </td>
                 <td>
-                    <%=gene.getExAC_005_Popn()%>
+                    <%=gene.getExAC_v2_005_Popn()%>
+                </td>
+                <td>
+                    <%=gene.getEdge_Case_OERatio_percentile_ExAC_v2()%>
                 </td>
             </tr>
             <%

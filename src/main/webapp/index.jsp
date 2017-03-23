@@ -23,9 +23,9 @@
                     <div class="col-xs-6 col-md-6">
                         <p class="lead" style="color: black">
                             <span class="label label-default">News</span>
-                            <small>We now provide a revised RVIS gene score (unpublished) based on the recently released ExAC 
-                                sequencing data. The ExAC data can be found at 
-                                (<a href="http://exac.broadinstitute.org/about">exac.broadinstitute.org</a>).</small>
+                            <small>We now provide a revised RVIS gene score (unpublished) based on the recently released ExAC v2 
+                                (release 2.0). The data can be found at 
+                                (<a href="http://gnomad.broadinstitute.org">gnomad.broadinstitute.org</a>).</small>
                         </p>
                     </div>
                 </div>
@@ -65,14 +65,20 @@
                             <div class="panel-body">
                                 <p>
                                     <a href="data/GenicIntolerance_v3_12Mar16.txt">Click Here</a> 
-                                to download the full list of CCDS Release 9 RVIS gene score. 
-                                Please cite <a href="http://www.plosgenetics.org/article/info:doi/10.1371/journal.pgen.1003709">
-                                    doi: 10.1371/journal.pgen.1003709</a>
+                                    to download the full list of CCDS Release 9 RVIS gene score. 
+                                    Please cite <a href="http://www.plosgenetics.org/article/info:doi/10.1371/journal.pgen.1003709">
+                                        doi: 10.1371/journal.pgen.1003709</a>
+                                </p>
+
+                                <p>
+                                    <a href="data/RVIS_Unpublished_ExAC_May2015.txt">Click Here</a> to download novel unpublished RVIS gene score 
+                                    based on ExAC sequencing data release (accessed: January 13th 2015 [updated scores for release0.3]).
                                 </p>
                                 
                                 <p>
-                                    <a href="data/RVIS_Unpublished_ExAC_May2015.txt">Click Here</a> to download novel unpublished RVIS gene score 
-                                based on ExAC sequencing data release (accessed: January 13th 2015 [updated scores for release0.3]).
+                                    <a href="data/RVIS_Unpublished_ExACv2_March2017.txt">Click Here</a> to download novel unpublished RVIS gene score 
+                                    based on ExAC v2 release 2.0 (accessed: March 15th 2017). As of this release we use CCDS release 20 and Ensembl 
+                                    release 87 annotations.
                                 </p>
                             </div>
                         </div>

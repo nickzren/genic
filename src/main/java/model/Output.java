@@ -42,29 +42,16 @@ public class Output {
             if (Input.geneNameList.contains(temp[0])) {
                 Gene gene = new Gene();
                 gene.Gene = temp[0];
-                gene.ALL_001_value = temp[1];
-                gene.ALL_001_Percent = temp[2];
-                gene.ALL_01_value = temp[3];
-                gene.ALL_01_Percent = temp[4];
-                gene.ALL_1_value = temp[5];
-                gene.ALL_1_Percent = temp[6];
-                gene.PP2_ALL_01_value = temp[7];
-                gene.PP2_ALL_01_Percent = temp[8];
-                gene.EA_01_value = temp[9];
-                gene.EA_01_Percent = temp[10];
-                gene.EA_1_value = temp[11];
-                gene.EA_1_Percent = temp[12];
-                gene.AA_01_value = temp[13];
-                gene.AA_01_Percent = temp[14];
-                gene.AA_1_value = temp[15];
-                gene.AA_1_Percent = temp[16];
-                gene.OEratio_value = temp[17];
-                gene.OEratio_Percent = temp[18];
-                gene.ExAC_01_Popn_Percent = temp[19];
-                gene.ExAC_005_Popn_Percent = temp[20];
-                gene.ExAC_001_Percent = temp[21];
-                gene.OEratio_Percentile_ExAC = temp[22];
-                gene.LoF_FDR_ExAC = temp[23];
+                gene.ALL_01_Value = temp[1];
+                gene.ALL_01_Percent = getPercentile(temp[2]);
+                gene.OEratio_Percent = getPercentile(temp[3]);
+                gene.ExAC_005_Popn_Percent = getPercentile(temp[4]);
+                gene.OEratio_Percentile_ExAC = getPercentile(temp[5]);
+                gene.LoF_FDR_ExAC = temp[6];
+                gene.ExAC_v2_005_Popn_value = temp[7];
+                gene.ExAC_v2_005_Popn_Percent = getPercentile(temp[8]);
+                gene.Edge_Case_ExAC_v2 = temp[9];
+                gene.OEratio_percentile_ExAC_v2 = getPercentile(temp[10]);
 
                 geneMap.put(gene.Gene, gene);
             }
@@ -76,6 +63,14 @@ public class Output {
             if (gene != null) {
                 Output.geneList.add(gene);
             }
+        }
+    }
+
+    private static String getPercentile(String value) {
+        if (value.equals(Data.NA)) {
+            return Data.NA;
+        } else {
+            return value + "%";
         }
     }
 }

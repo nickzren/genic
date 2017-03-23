@@ -1,7 +1,5 @@
 package object;
 
-import global.Data;
-
 /**
  *
  * @author nick
@@ -10,116 +8,65 @@ public class Gene {
 
     public static final String title
             = "GENE,"
-            + "ALL_0.01%,"
             + "ALL_0.1%,"
-            + "ALL_1%,"
-            + "PP2_ALL_0.1%,"
-            + "EA_0.1%,"
-            + "EA_1%,"
-            + "AA_0.1%,"
-            + "AA_1%,"
-            + "%OEratio,"
-            + "%ExAC_0.1%popn,"
+            + "OEratio,"
             + "%ExAC_0.05%popn,"
-            + "%ExAC_0.01%,"
             + "OEratio-percentile[ExAC],"
-            + "LoF-FDR[ExAC]";
+            + "LoF-FDR[ExAC],"
+            + "ExAC_v2_0.05%popn,"
+            + "Edge Case (ExAC_v2),"
+            + "OEratio-percentile[ExAC_v2]";
 
     public String Gene;
-    public String ALL_001_value;
-    public String ALL_001_Percent;
-    public String ALL_01_value;
+    public String ALL_01_Value;
     public String ALL_01_Percent;
-    public String ALL_1_value;
-    public String ALL_1_Percent;
-    public String PP2_ALL_01_value;
-    public String PP2_ALL_01_Percent;
-    public String EA_01_value;
-    public String EA_01_Percent;
-    public String EA_1_value;
-    public String EA_1_Percent;
-    public String AA_01_value;
-    public String AA_01_Percent;
-    public String AA_1_value;
-    public String AA_1_Percent;
-    public String OEratio_value;
     public String OEratio_Percent;
-    public String ExAC_01_Popn_Percent;
     public String ExAC_005_Popn_Percent;
-    public String ExAC_001_Percent;
     public String OEratio_Percentile_ExAC;
     public String LoF_FDR_ExAC;
+    public String ExAC_v2_005_Popn_value;
+    public String ExAC_v2_005_Popn_Percent;
+    public String Edge_Case_ExAC_v2;
+    public String OEratio_percentile_ExAC_v2;
 
     public String getGene() {
         return Gene;
     }
 
-    public String getALL_001() {
-        return ALL_001_value + " (" + ALL_001_Percent + "%)";
-    }
-
     public String getALL_01() {
-        return ALL_01_value + " (" + ALL_01_Percent + "%)";
-    }
-
-    public String getALL_1() {
-        return ALL_1_value + " (" + ALL_1_Percent + "%)";
-    }
-
-    public String getPP2_ALL_01() {
-        return PP2_ALL_01_value + " (" + PP2_ALL_01_Percent + "%)";
-    }
-
-    public String getEA_01() {
-        return EA_01_value + " (" + EA_01_Percent + "%)";
-    }
-
-    public String getEA_1() {
-        return EA_1_value + " (" + EA_1_Percent + "%)";
-    }
-
-    public String getAA_01() {
-        return AA_01_value + " (" + AA_01_Percent + "%)";
-    }
-
-    public String getAA_1() {
-        return AA_1_value + " (" + AA_1_Percent + "%)";
+        return ALL_01_Value + " (" + ALL_01_Percent + ")";
     }
 
     public String getOEratio() {
-        if (OEratio_Percent.equals(Data.NA)) {
-            return Data.NA;
-        } else {
-            return OEratio_Percent + "%";
-        }
+        return OEratio_Percent;
     }
 
-    public String getExAC_01_Popn() {
-        return ExAC_01_Popn_Percent + "%";
+    public String getExAC_005_Popn_Percent() {
+        return ExAC_005_Popn_Percent;
     }
 
-    public String getExAC_005_Popn() {
-        return ExAC_005_Popn_Percent + "%";
-    }
-
-    public String getExAC_001() {
-        return ExAC_001_Percent + "%";
-    }
-    
     public String getOEratio_Percentile_ExAC() {
-        if (OEratio_Percentile_ExAC.equals("N/A")) {
-            return Data.NA;
-        } else {
-            return OEratio_Percentile_ExAC + "%";
-        }
+        return OEratio_Percentile_ExAC;
     }
-    
+
     public String getLoF_FDR_ExAC() {
-        if (LoF_FDR_ExAC.equals("N/A")) {
-            return Data.NA;
-        } else {
-            return LoF_FDR_ExAC;
-        }
+        return LoF_FDR_ExAC;
+    }
+
+    public String getExAC_v2_005_Popn() {
+        return ExAC_v2_005_Popn_value + " (" + ExAC_v2_005_Popn_Percent + ")";
+    }
+
+    public String getEdge_Case_ExAC_v2() {
+        return Edge_Case_ExAC_v2;
+    }
+
+    public String getOEratio_percentile_ExAC_v2() {
+        return OEratio_percentile_ExAC_v2;
+    }
+
+    public String getEdge_Case_OERatio_percentile_ExAC_v2() {
+        return Edge_Case_ExAC_v2 + " (" + OEratio_percentile_ExAC_v2 + ")";
     }
 
     @Override
@@ -127,20 +74,14 @@ public class Gene {
         StringBuilder sb = new StringBuilder();
 
         sb.append(getGene()).append(",");
-        sb.append(getALL_001()).append(",");
         sb.append(getALL_01()).append(",");
-        sb.append(getALL_1()).append(",");
-        sb.append(getPP2_ALL_01()).append(",");
-        sb.append(getEA_01()).append(",");
-        sb.append(getEA_1()).append(",");
-        sb.append(getAA_01()).append(",");
-        sb.append(getAA_1()).append(",");
         sb.append(getOEratio()).append(",");
-        sb.append(getExAC_01_Popn()).append(",");
-        sb.append(getExAC_005_Popn()).append(",");
-        sb.append(getExAC_001()).append(",");
+        sb.append(getExAC_005_Popn_Percent()).append(",");
         sb.append(getOEratio_Percentile_ExAC()).append(",");
-        sb.append(getLoF_FDR_ExAC());
+        sb.append(getLoF_FDR_ExAC()).append(",");
+        sb.append(getExAC_v2_005_Popn()).append(",");
+        sb.append(getEdge_Case_ExAC_v2()).append(",");
+        sb.append(getOEratio_percentile_ExAC_v2());
 
         return sb.toString();
     }
