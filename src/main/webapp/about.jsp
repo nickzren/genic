@@ -30,26 +30,28 @@
                 </p>
 
                 <p>
-                    Currently this application accommodates genes within CCDS releases 9 to 15. 
-                    It takes HGNC nomenclature for genes with at least one public CCDS transcript.
+                    Currently this application accommodates genes within CCDS releases 9 to 20. 
+                    It takes HGNC nomenclature for genes with at least one public CCDS transcript. 
+                </p>
+                
+                <p>
+                    The newest RVIS release (v4) is based on the ExAC v2 standing variation data 
+                    and relies on transcript information from CCDS release 20 and variant annotations from Ensembl release 87.
                 </p>
 
                 <p>
-                    Note that for genes with very low (Y), there may not be enough polymorphism data 
-                    represented in EVS currently for an accurate assessment of genic intolerance, 
-                    using the original formulation of RVIS. For this reason, genes where Y is below 3 
-                    and X is relatively small (<30) have the additional option of a simple comparison 
-                    reported based on the observed and expected functional variation in the gene ("OEratio" 
-                    checkbox). In this formulation, allele frequency is ignored, and we simply compare the 
-                    ‘rate of Observed non-synonymous variation’ over the ‘rate of Expected non-synonymous 
-                    variation.’ The “Expected ratio” is determined by simulating all possible single 
-                    nucleotide substitutions from the underlying protein-coding sequence context of the gene. 
-                    The reported OEratio score reflects how divergent the observed ratio is from the expected 
-                    ratio, and this is converted to a genome-wide percentile. These percentiles are 
-                    interpreted in the same ways as the original formation of RVIS. So that a gene with low 
-                    Y value that scores as having a low OEratio statistic is also judged "intolerant". 
-                    We are currently working on a unified approach to capture those signals in a uniformed 
-                    way across the genome.
+                    Note that for genes with very low (Y), there may not be enough polymorphism data represented in the 
+                    population samples currently for an accurate assessment of genic intolerance. For this reason, genes 
+                    where Y is below 10 and X is relatively small (<140) have the additional option of a simple comparison 
+                    reported based on the observed and expected functional variation in the gene ("OE-ratio"). In this 
+                    formulation, allele frequency is ignored, and we simply compare the ‘proportion of Observed non-synonymous 
+                    variation’ over the ‘proportion of Expected non-synonymous variation.’ The “Expected proportion” is 
+                    determined by simulating all possible single nucleotide substitutions from the underlying protein-coding 
+                    sequence context of the gene. The reported OEratio score reflects how divergent the observed proportion 
+                    is from the expected proportion, and this is converted to a genome-wide percentile. These percentiles are 
+                    interpreted in the same ways as the RVIS formation. So that an edge case gene that scores as having a 
+                    low OE-ratio statistic is also judged "intolerant." We are continuously working on a unified approach 
+                    to capture those signals in a uniformed way across the genome.
                 </p>
                 
                 <hr>

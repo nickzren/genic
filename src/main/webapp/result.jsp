@@ -44,7 +44,7 @@
 
                 <th class="text-center">
                     <a class="black" data-toggle="tooltip" 
-                       title="RVIS v2, constructed on the ExAC data release">
+                       title="RVIS v3, constructed on the ExAC data release">
                         %ExAC RVIS
                     </a>
                 </th>
@@ -58,14 +58,14 @@
 
                 <th class="text-center">
                     <a class="black" data-toggle="tooltip" 
-                       title="RVIS v3, constructed on the ExAC v2 data release">
+                       title="RVIS v4, constructed on the ExAC v2 data release">
                         %ExAC v2 RVIS
                     </a>
                 </th>
 
                 <th class="text-center">
                     <a class="black" data-toggle="tooltip" 
-                       title="RVIS v3, constructed on the ExAC v2 data release">
+                       title="Y = Edge case genes. The OE-ratio is based on ExAC v2 data release">
                         Edge Case (%OE-ratio)
                     </a>
                 </th>
